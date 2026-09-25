@@ -14,11 +14,11 @@ export default function FloorPlan() {
           </Reveal>
           <Reveal as="p" className="section-lede">
             Each Summer Heaven home is one half of a semi-detached pair, with a
-            private main floor and an entirely separate legal basement apartment
+            private main floor and an entirely separate legal basement (Banff) apartment
             below — two full living spaces sharing one address.
           </Reveal>
           <Reveal as="div" className="floorplan-actions">
-            <a href="#drawings" className="btn btn-solid">
+            <a href="/blueprints" className="btn btn-solid">
               View Official Permit Drawings
             </a>
             <a href="#contact" className="btn btn-ghost">
@@ -56,7 +56,7 @@ export default function FloorPlan() {
             </div>
             <div className="fp-row">
               <span className="fp-dot"></span>
-              <span className="fp-label">Legal Basement Apartment — Living, Kitchen, 2 Bed, 2 Bath</span>
+              <span className="fp-label">Legal Basement (Banff) Apartment — Living, Kitchen, 2 Bed, 2 Bath</span>
               <span className="fp-val">
                 926 <i>Sq.Ft.</i>
               </span>

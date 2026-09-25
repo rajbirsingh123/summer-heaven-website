@@ -4,12 +4,15 @@ import Reveal from "@/components/Reveal";
 const PILLARS = ["Energy Efficiency", "Innovation", "Quality Assurance", "Sustainable Communities"];
 
 const PROJECTS = [
-  "Peace Towns",
-  "Wallace Towns",
-  "Peace Plaza",
-  "AIMS Dentistry (Sheppard & Garrison)",
-  "Springbank Dentistry",
-  "MyoHealth Physio",
+  { name: "Peace Towns", href: "https://peacetowns.ca/" },
+  { name: "Summer Heaven Wallace Towns" },
+  { name: "Peace Plaza", href: "https://prahantconstruction.com/peace-plaza/" },
+  { name: "AIMS Dentistry (Mississauga)", href: "https://www.aimsdentistry.com/" },
+  { name: "AIMS Dentistry at Sheppard", href: "https://dentistryatsheppard.com/" },
+  { name: "AIMS Dentistry on Garrison", href: "https://dentistryongarrison.com/" },
+  { name: "AIMS Dentistry on Laclie", href: "https://www.dentistryonlaclie.com/" },
+  { name: "Springbank Dentistry" },
+  { name: "MyoHealth Physio" },
 ];
 
 export default function Builder() {
@@ -52,10 +55,18 @@ export default function Builder() {
 
           <div className="builder-side">
             <Reveal as="div" className="builder-projects">
-              <h4>Notable Trident Communities</h4>
+              <h4>Notable Trident Projects</h4>
               <ul>
                 {PROJECTS.map((p) => (
-                  <li key={p}>{p}</li>
+                  <li key={p.name}>
+                    {p.href ? (
+                      <a href={p.href} target="_blank" rel="noopener">
+                        {p.name}
+                      </a>
+                    ) : (
+                      p.name
+                    )}
+                  </li>
                 ))}
               </ul>
             </Reveal>

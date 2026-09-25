@@ -13,7 +13,7 @@ export default function FabCta() {
   }, []);
 
   return (
-    <a href="#contact" className={`fab-cta${show ? " show" : ""}`}>
+    <a href="/#contact" className={`fab-cta${show ? " show" : ""}`}>
       Register Now
     </a>
   );

@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 const FEATURES = [
   {
     num: "01",
-    title: "Legal Basement Apartment",
+    title: "Legal Basement (Banff) Apartment",
     body: "A fully self-contained lower-level apartment with its own kitchen, living/dining, two bedrooms and two full washrooms — ideal for extended family or excellent rental-income potential.",
   },
   {
@@ -41,10 +41,10 @@ export default function Features() {
           WHY SUMMER HEAVEN
         </Reveal>
         <Reveal as="h2" className="section-title">
-          One Home. <span className="script">Two Living Spaces.</span>
+          One Home. <span className="script">Two Living Spaces.</span> - Banff
         </Reveal>
         <Reveal as="p" className="section-lede">
-          Built to Ontario Building Code with a genuinely separate legal basement
+          Built to Ontario Building Code with a genuinely separate legal basement (Banff)
           apartment — not an afterthought, but part of the original design.
         </Reveal>
         <div className="feature-grid">

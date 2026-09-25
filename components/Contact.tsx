@@ -14,7 +14,7 @@ export default function Contact() {
           </Reveal>
           <Reveal as="p" className="section-lede">
             Register now for early pricing, floor plans and construction updates
-            on the Jasper model at Summer Heaven.
+            on Summer Heaven by Trident Builders.
           </Reveal>
           <Reveal as="ul" className="contact-details">
             <li>
@@ -24,13 +24,13 @@ export default function Contact() {
             <li>
               <span className="cd-label">Email</span>
               <span>
-                <a href="mailto:info@summerheaven.ca">info@summerheaven.ca</a>
+                <a href="mailto:info@trident-builders.ca">info@trident-builders.ca</a>
               </span>
             </li>
             <li>
               <span className="cd-label">Phone</span>
               <span>
-                <a href="tel:+14165682000">+1 (416) 568-2000</a>
+                <a href="tel:+15199145496">519.914.5496</a>
               </span>
             </li>
             <li>

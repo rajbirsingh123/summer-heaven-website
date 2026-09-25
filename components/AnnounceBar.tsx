@@ -1,6 +1,6 @@
 const ITEMS = [
   "Reserve Your Home with Only $5,000",
-  "Total Deposit Just 5% — Easy Installments",
+  "Just 5% Intial Deposit — Easy Installments",
   "Assignment Sale Clause Included",
   "Estimated Occupancy June 2027",
 ];

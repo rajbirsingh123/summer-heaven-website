@@ -74,7 +74,7 @@ export default function Location() {
         <Reveal as="div" className="location-map-hero">
           <Image
             src="/images/location-map.jpg"
-            alt="Aerial map of Wallaceburg showing the Jasper Model site at Elizabeth &amp; Lisgar Street with nearby Downtown Wallaceburg, Tim Hortons, Wallaceburg District Secondary School, Chatham-Kent Health Alliance, Wallaceburg Sydenham District Pool and the Sydenham River waterfront"
+            alt="Aerial map of Wallaceburg showing the Summer Heaven by Trident Builders site at Elizabeth &amp; Lisgar Street with nearby Downtown Wallaceburg, Tim Hortons, Wallaceburg District Secondary School, Chatham-Kent Health Alliance, Wallaceburg Sydenham District Pool and the Sydenham River waterfront"
             width={1672}
             height={941}
             sizes="(max-width: 980px) 100vw, 1180px"

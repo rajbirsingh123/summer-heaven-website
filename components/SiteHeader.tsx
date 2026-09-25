@@ -4,14 +4,13 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { href: "#tour", label: "Tour" },
-  { href: "#features", label: "Features" },
-  { href: "#models", label: "Models" },
-  { href: "#builder", label: "Builder" },
-  { href: "#floorplan", label: "Floor Plan" },
-  { href: "#drawings", label: "Blueprints" },
-  { href: "#location", label: "Location" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#tour", label: "Tour" },
+  { href: "/#features", label: "Features" },
+  { href: "/#builder", label: "Builder" },
+  { href: "/#floorplan", label: "Floor Plan" },
+  { href: "/blueprints", label: "Blueprints" },
+  { href: "/#location", label: "Location" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function SiteHeader() {
@@ -28,7 +27,7 @@ export default function SiteHeader() {
   return (
     <header className={`site-header${scrolled ? " scrolled" : ""}`}>
       <div className="container header-inner">
-        <a href="#home" className="brand">
+        <a href="/" className="brand">
           <Image
             src="/images/logo.png"
             alt="Summer Heaven"
@@ -45,7 +44,7 @@ export default function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a href="#contact" className="btn btn-outline header-cta">
+        <a href="/#contact" className="btn btn-outline header-cta">
           Register Now
         </a>
         <button

@@ -16,14 +16,17 @@ export default function ContactForm() {
     setStatus({ text: "", error: false });
 
     try {
-      const action = form.action; // https://formsubmit.co/info@summerheaven.ca
+      const action = form.action; // https://formsubmit.co/info@trident-builders.ca
       const ajaxUrl = action.replace("formsubmit.co/", "formsubmit.co/ajax/");
       const res = await fetch(ajaxUrl, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: new FormData(form),
       });
-      if (!res.ok) throw new Error("Request failed");
+      const data = await res.json().catch(() => null);
+      if (!res.ok || !data || data.success === "false" || data.success === false) {
+        throw new Error(data?.message || "Request failed");
+      }
       setStatus({
         text: "Thank you! Your registration has been received — our team will be in touch shortly.",
         error: false,
@@ -31,7 +34,7 @@ export default function ContactForm() {
       form.reset();
     } catch {
       setStatus({
-        text: "Something went wrong sending your registration. Please email us directly at info@summerheaven.ca.",
+        text: "Something went wrong sending your registration. Please email us directly at info@trident-builders.ca.",
         error: true,
       });
     } finally {
@@ -42,7 +45,7 @@ export default function ContactForm() {
   return (
     <form
       className="reg-form"
-      action="https://formsubmit.co/info@summerheaven.ca"
+      action="https://formsubmit.co/info@trident-builders.ca"
       method="POST"
       onSubmit={onSubmit}
     >

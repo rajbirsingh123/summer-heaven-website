@@ -13,9 +13,9 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Summer Heaven | New Semi-Detached Homes with Legal Basement Suites — Wallaceburg, ON",
+  title: "Summer Heaven | New Semi-Detached Homes with Legal Basement (Banff) Suites — Wallaceburg, ON",
   description:
-    "Summer Heaven is a new community of modern semi-detached homes, each with a legal basement apartment, coming to Wallaceburg, Ontario. Reserve your home with just $5,000.",
+    "Summer Heaven is a new community of modern semi-detached homes, each with a legal basement (Banff) apartment, coming to Wallaceburg, Ontario. Reserve your home with just $5,000.",
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",

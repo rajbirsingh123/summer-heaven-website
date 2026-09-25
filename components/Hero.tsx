@@ -20,13 +20,13 @@ export default function Hero() {
         </Reveal>
         <Reveal as="p" className="hero-lede">
           Brand-new, pre-construction semi-detached homes where comfortable living
-          meets smart investment. Every home includes a legal basement apartment
+          meets smart investment. Banff home includes a legal basement (Banff) apartment
           with its own entrance, utilities and laundry — excellent rental-income
           potential that helps cover a major portion of your mortgage.
         </Reveal>
         <Reveal as="div" className="hero-highlights">
           <span>
-            <span className="hh-dot"></span>Legal Basement Apartment
+            <span className="hh-dot"></span>Legal Basement (Banff) Apartment
           </span>
           <span>
             <span className="hh-dot"></span>2 Bed / 2 Bath Per Level

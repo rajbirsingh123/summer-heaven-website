@@ -13,7 +13,7 @@ export default function Models() {
         </Reveal>
         <Reveal as="p" className="section-lede">
           A thoughtfully designed semi-detached layout — every Summer Heaven home
-          comes with a legal basement apartment included.
+          comes with a legal basement (Banff) apartment included.
         </Reveal>
 
         <div className="model-panel">
@@ -25,7 +25,7 @@ export default function Models() {
               sizes="(max-width: 980px) 100vw, 50vw"
               style={{ objectFit: "cover" }}
             />
-            <span className="model-badge">Legal Basement Included</span>
+            <span className="model-badge">Legal Basement (Banff) Included</span>
           </Reveal>
 
           <div>
@@ -42,7 +42,7 @@ export default function Models() {
               </Reveal>
               <Reveal as="div" className="model-level">
                 <h4>
-                  Legal Basement Apartment
+                  Legal Basement (Banff) Apartment
                   <span className="level-count">926 Sq.Ft.</span>
                 </h4>
                 <p>2 additional bedrooms and 2 full washrooms, with its own separate entrance, separate utility meters and separate laundry — built for rental income or multi-generational living.</p>
