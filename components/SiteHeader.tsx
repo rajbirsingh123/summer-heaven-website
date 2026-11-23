@@ -44,6 +44,14 @@ export default function SiteHeader() {
             </a>
           ))}
         </nav>
+        <a
+          href="https://summer-heaven-portal.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline header-cta header-homeowners"
+        >
+          Homeowners
+        </a>
         <a href="/#contact" className="btn btn-outline header-cta">
           Register Now
         </a>
