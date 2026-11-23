@@ -13,6 +13,23 @@ const NAV_LINKS = [
   { href: "/#contact", label: "Contact" },
 ];
 
+const HOMEOWNERS_URL = "https://summer-heaven-portal.netlify.app/";
+
+function HouseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M4 11.5 12 4l8 7.5M6 10v9h12v-9"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M10 19v-5h4v5" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
@@ -23,6 +40,8 @@ export default function SiteHeader() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const closeNav = () => setNavOpen(false);
 
   return (
     <header className={`site-header${scrolled ? " scrolled" : ""}`}>
@@ -37,24 +56,47 @@ export default function SiteHeader() {
             priority
           />
         </a>
+
         <nav className={`main-nav${navOpen ? " open" : ""}`} id="mainNav">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setNavOpen(false)}>
+            <a key={link.href} href={link.href} onClick={closeNav}>
               {link.label}
             </a>
           ))}
+
+          <div className="mobile-nav-actions">
+            <a
+              href={HOMEOWNERS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost header-homeowners"
+              onClick={closeNav}
+            >
+              <HouseIcon />
+              Homeowners
+            </a>
+            <a href="/#contact" className="btn btn-solid" onClick={closeNav}>
+              Register Now
+            </a>
+          </div>
         </nav>
-        <a
-          href="https://summer-heaven-portal.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-outline header-cta header-homeowners"
-        >
-          Homeowners
-        </a>
-        <a href="/#contact" className="btn btn-outline header-cta">
-          Register Now
-        </a>
+
+        <div className="header-actions">
+          <a
+            href={HOMEOWNERS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-ghost header-homeowners"
+          >
+            <HouseIcon />
+            Homeowners
+          </a>
+          <span className="nav-divider" aria-hidden="true"></span>
+          <a href="/#contact" className="btn btn-solid header-cta">
+            Register Now
+          </a>
+        </div>
+
         <button
           className={`nav-toggle${navOpen ? " open" : ""}`}
           aria-label="Toggle menu"

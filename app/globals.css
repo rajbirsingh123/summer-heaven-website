@@ -107,7 +107,12 @@ a{color:inherit;text-decoration:none;}
 }
 .main-nav a:hover{color:var(--gold-bright);}
 .main-nav a:hover::after{width:100%;}
+.header-actions{display:flex;align-items:center;gap:12px;flex-shrink:0;}
 .header-cta{flex-shrink:0;}
+.nav-divider{width:1px;height:20px;background:var(--line);flex-shrink:0;}
+.header-homeowners{padding:11px 20px 11px 16px;gap:7px;}
+.header-homeowners svg{width:14px;height:14px;flex-shrink:0;}
+.mobile-nav-actions{display:none;}
 .nav-toggle{
   display:none;flex-direction:column;justify-content:center;gap:5px;
   width:32px;height:32px;background:none;border:none;cursor:pointer;padding:0;
@@ -615,7 +620,7 @@ a{color:inherit;text-decoration:none;}
 @media (max-width:980px){
   .main-nav{display:none;}
   .nav-toggle{display:flex;}
-  .header-cta{display:none;}
+  .header-actions{display:none;}
   .tour-scroll-grid{grid-template-columns:1fr;gap:0;}
   .tour-media-sticky{display:none;}
   .tour-step{min-height:0;opacity:1;padding:0 0 44px;border-bottom:none;}
@@ -667,6 +672,11 @@ a{color:inherit;text-decoration:none;}
 .nav-toggle.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .nav-toggle.open span:nth-child(2){opacity:0;}
 .nav-toggle.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.main-nav.open .mobile-nav-actions{
+  display:flex;flex-direction:column;gap:14px;width:100%;
+  margin-top:10px;padding-top:28px;border-top:1px solid var(--line);
+}
+.main-nav.open .mobile-nav-actions .btn{justify-content:center;width:100%;}
 
 /* ============ 3D Tilt Cards ============ */
 .tilt{
